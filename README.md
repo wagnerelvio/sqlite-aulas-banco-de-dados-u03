@@ -51,36 +51,6 @@ sqlite-aulas-banco-de-dados/
 4. Identifique os produtos cujo preço supera a média geral.
 5. Modifique o banco adicionando um cliente sem pedido e um produto novo; repita as consultas.
 
-## Executar no computador (opcional)
-
-Com `sqlite3` instalado, no terminal, dentro da raiz do projeto:
-
-```bash
-sqlite3 aula.db < sql/01_criar_banco.sql
-sqlite3 aula.db < sql/02_juncoes_horizontais.sql
-sqlite3 aula.db < sql/03_juncoes_verticais.sql
-sqlite3 aula.db < sql/04_agregacoes.sql
-sqlite3 aula.db < sql/05_subconsultas.sql
-sqlite3 aula.db < sql/06_comandos_auxiliares.sql
-```
-
-A tabela `sqlite_master` e o comando `PRAGMA table_info` permitem inspecionar a base sem precisar de extensões.
-
-## Publicar no GitHub
-
-1. Crie um repositório vazio no GitHub (por exemplo: `sqlite-aulas-banco-de-dados`).
-2. Extraia o ZIP e abra a pasta no terminal.
-3. Execute os comandos abaixo, substituindo `SEU_USUARIO` pelo seu login do GitHub:
-
-```bash
-git init
-git add .
-git commit -m "Adiciona exemplos didaticos de SQLite"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/sqlite-aulas-banco-de-dados.git
-git push -u origin main
-```
-
 Se o repositório remoto já tiver arquivos, como um README criado pelo GitHub, sincronize os históricos antes de enviar os arquivos ou crie o remoto vazio para usar essa sequência diretamente.
 
 > Requisitos: SQLite 3 ou acesso ao SQLite Online. Os exemplos não dependem do MySQL.
